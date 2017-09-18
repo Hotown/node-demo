@@ -1,7 +1,7 @@
 {
   "name": "node-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "[《Node.js 包教不包会》 -- by alsotang](https://github.com/alsotang/node-lessons) 学习代码库",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,10 +9,25 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async": "^2.5.0",
     "cheerio": "^1.0.0-rc.2",
     "eventproxy": "^1.0.0",
     "express": "^4.15.4",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.3",
+    "should": "^13.0.1",
     "superagent": "^3.6.0",
     "utility": "^1.12.0"
-  }
+  },
+  "devDependencies": {
+    "mocha": "^3.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hotown/node-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hotown/node-demo/issues"
+  },
+  "homepage": "https://github.com/Hotown/node-demo#readme"
 }
