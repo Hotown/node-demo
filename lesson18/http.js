@@ -2,8 +2,6 @@ const http = require("http");
 
 const server = http.createServer(requestHandler);
 
-const users = [{ id: 1, name: "Hotown" }];
-
 function parseBody(req, callback) {
   // 从req中解析body
   callback(null, body);
@@ -11,8 +9,6 @@ function parseBody(req, callback) {
 
 function checkIdInDatabase(body, callback) {
   // 根据body.id在Database中查询，返回结果
-  let user;
-  users.forEach(user => {});
   callback(null, user);
 }
 
@@ -31,4 +27,6 @@ function requestHandler(req, res) {
     });
   });
 }
-server.listen(3000);
+server.listen(3000, () => {
+  console.log("Listening on port 3000");
+});
